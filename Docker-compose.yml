@@ -1,0 +1,29 @@
+# The basic docker structure placeholder files were from:
+# https://medium.com/@mdmerazul75/setting-up-a-django-and-react-project-with-docker-and-docker-compose-f7a704c00bf9
+
+#Will rewrite the docker files etc to work with conda later.  I can borrow pripr work
+# May need to ultimately make a postgreSQL image.  Will wait to deploy via docker until then
+
+services:
+  backend:
+    build:
+      context: ./backend-django
+    volumes:
+      - ./backend/mywebsite:/app #### check
+    ports:
+      - "8000:8000" #check
+    command: python manage.py runserver 0.0.0.0:8000 # check
+
+  frontend:
+    build:
+      context: ./frontend-react
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    stdin_open: true
+    command: ["npm", "run", "dev", "--", "--host"]
+
+
+

@@ -1,0 +1,10 @@
+name: drf_1d
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - anaconda::django
+  - conda-forge::djangorestframework
+  - conda-forge::django-filter
+  - conda-forge::python-decouple
+prefix: /Users/ericolle/miniconda3/envs/drf_1d
