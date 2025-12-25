@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
+
   return (
     <>
-        <a className='btn btn-outline-info' href=''>Login</a>
+        <a className= {`btn ${props.class}`} href='#'>{props.text}</a>
     </>
   )
 }
