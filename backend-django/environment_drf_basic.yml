@@ -7,6 +7,4 @@ dependencies:
   - conda-forge::djangorestframework
   - conda-forge::django-filter
   - conda-forge::python-decouple
-  - conda-forge::django-cors-headers
-  - conda-forge::djangorestframework_simplejwt
 prefix: /Users/ericolle/miniconda3/envs/drf_1d

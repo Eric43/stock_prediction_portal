@@ -60,15 +60,11 @@ const Register = () => {
                     ) : (
                         <button type='submit' className='btn btn-info d-block mx-auto'>Register</button> )
                     }
-                   {/*  <button type='submit' className='btn btn-info d-block mx-auto'>Register</button>   */}   
-
                 </form>
 
             </div>
         </div>
     </div> 
-    
-    
     </>
     
   )
