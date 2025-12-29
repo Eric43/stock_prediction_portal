@@ -11,7 +11,7 @@ const Main = () => {
                 of a Udemy course taught by Rathan Kumar.This application utilizes machine learing with Keras-TF 
                 and LSTM models.  It uses basic models to predict future stock prices with 100 and 200 d moving averages.
             </p>
-            <Button text='Login' class='btn-outline-info'  url="/login" />
+            <Button text='Explore' class='btn-outline-info'  url="/dashboard" />
         </div>
 
     </div>
