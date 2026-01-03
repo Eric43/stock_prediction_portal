@@ -10,6 +10,8 @@ from rest_framework.response import Response
 
 # Create your views here.
 
+
+
 class RegisterView(generics.CreateAPIView):
     generics = User.objects.all()
     serializer_class=UserSerializer

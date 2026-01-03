@@ -9,6 +9,7 @@ const Register = () => {
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [password2, setPassword2] = useState('')
     const [errors, setErrors] = useState({})
     const [success, setSuccess] = useState(false)
     const [loading, setLoading] = useState(false)
@@ -18,7 +19,7 @@ const Register = () => {
         setLoading(true);
 
         const userData ={
-            username, email, password
+            username, email, password, password2
         }
         try{
             const response = await axios.post('http://127.0.0.1:8005/api/v1/register/', userData);
@@ -50,6 +51,8 @@ const Register = () => {
                         </div>
                     
                         <input type='password' className='form-control mb-4' placeholder='Set Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                        <input type='password' className='form-control mb-4' placeholder='Confirm Password' value={password2} onChange={(e)=>setPassword2(e.target.value)}/>
+
                         <small>{errors.password && <div className="text-danger">{errors.password}</div>}</small> 
                     </div>
 
