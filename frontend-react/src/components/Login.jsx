@@ -64,6 +64,13 @@ const Login = () => {
                         <button type='submit' className='btn btn-info d-block mx-auto'>Login</button> )
                     }
                 </form>
+                <div className="text-light">
+                    <hr />
+                    <p className="text-light">Login with:</p>
+                    <button type='submit' className="btn btn-info d-block mx-auto" disabled>
+                        GitHub
+                    </button>
+                </div>
 
             </div>
         </div>

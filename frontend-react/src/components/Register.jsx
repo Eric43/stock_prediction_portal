@@ -59,11 +59,18 @@ const Register = () => {
                     {success && <div className='alert alert-success'>Registration Successful!</div>}
 
                     {loading ? (
-                        <button type='submit' className='btn btn-info d-block mx-auto' disabled> <FontAwesomeIcon icon={faSpinner} spin />Please wait...</button> 
+                        <button type='submit' className='btn btn-info d-block mx-auto mb-4' disabled> <FontAwesomeIcon icon={faSpinner} spin />Please wait...</button> 
                     ) : (
-                        <button type='submit' className='btn btn-info d-block mx-auto'>Register</button> )
+                        <button type='submit' className='btn btn-info d-block mx-auto mb-4'>Register</button> )
                     }
                 </form>
+                <div className="text-light">
+                    <hr />
+                    <p className="text-light">Register using:</p>
+                    <button type='submit' className="btn btn-info d-block mx-auto" disabled>
+                        GitHub
+                    </button>
+                </div>
 
             </div>
         </div>
